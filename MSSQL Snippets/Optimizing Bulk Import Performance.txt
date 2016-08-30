@@ -1,0 +1,19 @@
+Optimizing Bulk Import Performance
+https://msdn.microsoft.com/en-us/library/ms190421%28v=sql.105%29.aspx
+
+
+La base de datos de carga, tiene que tener el modelo de recuperación simplificado:
+-- Antes
+USE master;
+ALTER DATABASE database_name SET RECOVERY BULK_LOGGED;
+
+-- Después
+USE master;
+ALTER DATABASE database_name SET RECOVERY FULL;
+
+
+
+Deshabilitar durante la carga
+- Indices (ok default)
+- Triggers (ok default)
+- Modelo de recuperación(ok default)

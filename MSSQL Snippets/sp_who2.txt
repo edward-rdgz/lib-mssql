@@ -1,0 +1,2 @@
+Qué usuarios están conectados
+sp_who2

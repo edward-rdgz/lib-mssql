@@ -1,0 +1,3 @@
+http://gnuwin32.sourceforge.net/packages/libiconv.htm
+
+E:\iconv\iconv.exe -f utf-8 -t utf-16le < Materiales.txt > Materiales2.txt
